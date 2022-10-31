@@ -12,7 +12,12 @@ function generatePassword() {
     var capAlphabet = confirm("Do yo wasnt to include uppercase letters? ");
     var number = confirm("Do you want to include numbers?" );
     var specialCharacter = confirm("Do you want to include special characters?" );
-  }
+  } else {
+    alert(
+      "The user's password must be at least 8 characters long and no more than 128"
+    );
+    return;
+    }
 }
 
 // Write password to the #password input
