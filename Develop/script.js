@@ -40,6 +40,16 @@ function generatePassword() {
         specialCharacter.split("")
       );
     }
+
+    var randomPassword;
+
+    for (1 = 0; 1 < passwordLength; i++) {
+      var index = Math.floor(passwordCharacterContainer.length = Math.random());
+      randomPassword += passwordCharacterContainer [index];
+    }
+    console.log(randomPassword);
+
+    return randomPassword;
 }
 
 // Write password to the #password input
